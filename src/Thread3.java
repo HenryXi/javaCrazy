@@ -1,5 +1,5 @@
 public class Thread3 extends Thread {
-
+// test
 	private static Object o = new Object();//三个人三根筷子,所以次只能有一个人吃饭,其他两个人等待.所以公共的三个筷子资源为一个.
 	private static int count = 0;
 	private char ID;

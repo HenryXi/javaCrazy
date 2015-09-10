@@ -19,11 +19,22 @@ public class Canvas
 			s.draw(this);
 		}
 	}
+
+	public void drawAll(Collection<Shape> shapes)
+	{
+		for (Shape s : shapes)
+		{
+			s.draw(this);
+		}
+	}
+
 	public static void main(String[] args)
 	{
 		List<Circle> circleList = new ArrayList<Circle>();
 		circleList.add(new Circle());
 		Canvas c = new Canvas();
 		c.drawAll(circleList);
+		List<Shape> shapeList=new ArrayList<Shape>();
+//		c.drawAll(shapeList);
 	}
 }

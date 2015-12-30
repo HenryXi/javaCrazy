@@ -17,7 +17,7 @@ public class FileInputStreamTest
 		//创建字节输入流
 		FileInputStream fis = new FileInputStream("D:/MyKanbox/MyCode/Java/javaSE_Crazy/src/nIO/No15_3/FileInputStreamTest.java");
 		//创建一个长度为1024的“竹筒”
-		byte[] bbuf = new byte[10];
+		byte[] bbuf = new byte[1024];
 		//用于保存实际读取的字节数
 		int hasRead = 0;
 		//使用循环来重复“取水”过程

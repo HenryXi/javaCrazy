@@ -31,12 +31,18 @@ X | Time zone | ISO 8601 time zone | -08; -0800; -08:00
 
 The following code show how to use ``SimpleDateFormat``
 ```java
-    public class DateFormatUtil {
-        public static void main(String[] args) {
-            Date date = new Date();
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy/MM/dd");
-            System.out.println(simpleDateFormat.format(date));
-        }
-    }
+    Date date = new Date();
+    SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy/MM/dd");
+    System.out.println(simpleDateFormat.format(date));
 ```
 
+You can define pattern in constructor of ``SimpleDateFormat`` or use ``applyPattern`` method to
+applies the given pattern. The following code is same as above.
+```java
+    Date date = new Date();
+    SimpleDateFormat simpleDateFormat = new SimpleDateFormat();
+    simpleDateFormat.applyPattern("yyyy/MM/dd");
+    System.out.println(simpleDateFormat.format(date));
+```
+
+About parsing string to date you can see [here](./parse-string-to-date).

@@ -45,4 +45,4 @@ applies the given pattern. The following code is same as above.
     System.out.println(simpleDateFormat.format(date));
 ```
 
-About parsing string to date you can see [here](./parse-string-to-date).
+About parsing string to date you can see [here](./java-parse-string-to-date).

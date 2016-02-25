@@ -2,7 +2,8 @@
 
 We use ``SimpleDateFormat`` to parse string to date in java. It allows you formatting(date -> string) and parsing(string -> date).
 Before using ``SimpleDateFormat`` you have to choose user-defined patterns for date-time formatting. The following
-pattern letters are defined. You can use them define different patterns.
+pattern letters are defined (all other characters from 'A' to 'Z' and from 'a' to 'z' are reserved).
+You can use them define different patterns.
 
 Letter | Date or Time Component | Presentation | Examples
 :-- | :-- | :-- | :--
@@ -29,7 +30,7 @@ z | Time zone | General time zone | Pacific Standard Time; PST; GMT-08:00
 Z | Time zone | RFC 822 time zone | -0800
 X | Time zone | ISO 8601 time zone | -08; -0800; -08:00
 
-The following code show how to use ``SimpleDateFormat``
+The following code show how to use ``SimpleDateFormat`` to parse string to date
 ```java
     String dateString = "2016/02/25";
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy/MM/dd");

@@ -16,7 +16,7 @@ public class DateFormatUtil {
 
     private static void parse() throws ParseException {
         String dateString = "2016/02/25";
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy/MM/dd");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy/MM/bb");
         Date date = simpleDateFormat.parse(dateString);
         System.out.println(date.toString());
     }

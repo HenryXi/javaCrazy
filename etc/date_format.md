@@ -28,3 +28,15 @@ S | Millisecond | Number | 978
 z | Time zone | General time zone | Pacific Standard Time; PST; GMT-08:00
 Z | Time zone | RFC 822 time zone | -0800
 X | Time zone | ISO 8601 time zone | -08; -0800; -08:00
+
+The following code show how to use ``SimpleDateFormat``
+```java
+    public class DateFormatUtil {
+        public static void main(String[] args) {
+            Date date = new Date();
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy/MM/dd");
+            System.out.println(simpleDateFormat.format(date));
+        }
+    }
+```
+

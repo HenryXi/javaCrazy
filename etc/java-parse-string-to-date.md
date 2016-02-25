@@ -46,4 +46,4 @@ applies the given pattern. The following code is same as above.
     Date date = simpleDateFormat.parse(dateString);
 ```
 
-About formatting date you can see [here](/java-date-format).
+About formatting date you can see [here](http://www.henryxi.com/java-date-format).
